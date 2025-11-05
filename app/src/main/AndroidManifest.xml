@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Wordlle">
         <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WordRepository"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
