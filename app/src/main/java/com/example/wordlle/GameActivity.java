@@ -24,6 +24,7 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
 
         String category = getIntent().getStringExtra("CATEGORY");
+        assert category != null;
         targetWord = WordRepository.getRandomWord(category);
         targetWord = targetWord.substring(0, Math.min(targetWord.length(), WORD_LENGTH)).toLowerCase();
 
